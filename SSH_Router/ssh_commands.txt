@@ -1,0 +1,4 @@
+tacacs-server host 1.2.3.4
+username testapp1 password testapp111
+username testapp2 password testapp222
+username testapp3 password testapp333
