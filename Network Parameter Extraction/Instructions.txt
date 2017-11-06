@@ -1,0 +1,11 @@
+This script can be added to the Linux scheduler to run in intervals and collect data to the database
+
+For more info about configuring scheduler: http://kvz.io/blog/2007/07/29/schedule-tasks-on-linux-using-crontab/
+
+Before scheduling this task, run the script in the console to check for errors:
+
+Go to the folder containing the script and all files
+
+Enter this command: python NetMon_SQL_v1.py NETWORK_IP.txt SSH_USERPASS.txt SQL_CONN.txt
+
+Check the console output and SQL_Error_Log.txt file for any errors.
