@@ -45,6 +45,7 @@ print("\nInterface %s was set to PROMISC mode." % net_iface)
 
 # Scapy normally makes sure that replies come from the same IP address the stimulus was sent to.
 # But our DHCP packet is sent to the IP broadcast address (255.255.255.255) and any answer packet will have the IP address of the replying DHCP server as its source IP address (e.g. 192.168.2.101).
+
 # Because these IP addresses don't match, we have to disable Scapy's check with conf.checkIPaddr = False before sending the stimulus.
 # Source: https://bitbucket.org/pbi/test/wiki/doc/IdentifyingRogueDHCPServers
 conf.checkIPaddr = False
